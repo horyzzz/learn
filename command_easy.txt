@@ -15,4 +15,32 @@ git clone xxxxxxxxx(xxxxxxxxx为远程库地址)
 
 git add xxxx(xxxx为修改的文件或者文件夹)
 git commit -m 'xxxx'(对此次操作的说明)
-git push (将本次操作上传至远程库)
+git push -u origin master(将本次操作上传至远程库)
+
+创建分支
+git checkout -b xxx(xxx为分支名)
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+快速合并会产生冲突情况：
+每次进行分支操作后，需要切换至master分支后再进行合并。
+
+当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
+
+解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。
+
+用git log --graph命令可以看到分支合并图。
+
+普通合并方式：
+普通方式合并分支 git merge --no-ff -m "desc" branchName (desc为合并描述，branchName为分支名称)
+
