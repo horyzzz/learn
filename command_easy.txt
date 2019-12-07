@@ -12,3 +12,7 @@
 
 链接远程库
 git clone xxxxxxxxx(xxxxxxxxx为远程库地址)
+
+git add xxxx(xxxx为修改的文件或者文件夹)
+git commit -m 'xxxx'(对此次操作的说明)
+git push (将本次操作上传至远程库)
