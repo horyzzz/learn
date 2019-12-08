@@ -44,3 +44,4 @@ git checkout -b xxx(xxx为分支名)
 普通合并方式：
 普通方式合并分支 git merge --no-ff -m "desc" branchName (desc为合并描述，branchName为分支名称)
 
+从远程库拉取最新版本：git pull
